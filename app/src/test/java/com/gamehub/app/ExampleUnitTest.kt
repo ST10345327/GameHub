@@ -1,4 +1,4 @@
-package com.example.gamehub
+package com.gamehub.app
 
 import org.junit.Test
 
