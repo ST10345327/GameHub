@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Setswana (tn). DRAFT translations - have a fluent speaker review before the demo video. -->
+<resources>
+    <string name="app_name" translatable="false">GameHub</string>
+
+    <string name="nav_discover">Sekaseka</string>
+    <string name="nav_search">Batla</string>
+    <string name="nav_library">Laeborari</string>
+    <string name="nav_wishlist">Ditakatso</string>
+    <string name="nav_profile">Porofaele</string>
+
+    <string name="onboarding_skip">Tlola</string>
+    <string name="onboarding_next">Latelang</string>
+    <string name="onboarding_get_started">Simolola</string>
+    <string name="onboarding_title_1">Fitlhela metshameko e le dikete</string>
+    <string name="onboarding_body_1">Sekaseka metshameko mo diphaterefomong tsotlhe. Batla metshameko ka mofuta, tekanyo le ngwaga wa go ntshiwa.</string>
+    <string name="onboarding_title_2">Aga laeborari ya gago ya metshameko</string>
+    <string name="onboarding_body_2">Boloka metshameko mme o latele e o batlang go e tshameka, e o e tshamekang le e o e feditseng.</string>
+    <string name="onboarding_title_3">Bapisa, boloka mme o fitlhele</string>
+    <string name="onboarding_body_3">Bapisa metshameko e le pedi, kgotsa o letle Nkgakgamatse e go kgethele motshameko o o latelang.</string>
+
+    <string name="auth_welcome_back">Re a go amogela gape</string>
+    <string name="auth_sign_in_subtitle">Tsena mo akhaonteng ya gago ya GameHub</string>
+    <string name="auth_email">Imeile</string>
+    <string name="auth_password">Lefoko la sephiri</string>
+    <string name="auth_forgot_password">O lebetse lefoko la sephiri?</string>
+    <string name="auth_sign_in">Tsena</string>
+    <string name="auth_no_account">Ga o na akhaonto?</string>
+    <string name="auth_register">Ikwadise</string>
+    <string name="auth_create_account_title">Bopa akhaonto ya gago</string>
+    <string name="auth_username">Leina la mosebedisi</string>
+    <string name="auth_confirm_password">Netefatsa lefoko la sephiri</string>
+    <string name="auth_have_account">O setse o na le akhaonto?</string>
+    <string name="auth_create_account_button">Bopa akhaonto</string>
+    <string name="auth_show_password">Bontsha lefoko la sephiri</string>
+    <string name="auth_hide_password">Fitlha lefoko la sephiri</string>
+
+    <string name="home_welcome">Re a go amogela gape</string>
+    <string name="home_search_hint">Batla metshameko…</string>
+    <string name="home_surprise_title">Nkgakgamatse</string>
+    <string name="home_surprise_subtitle">Fitlhela motshameko o o ka o ratang</string>
+    <string name="home_trending">Tse di tumileng jaanong</string>
+    <string name="home_popular">Metshameko e e tumileng</string>
+
+    <string name="search_title">Batla</string>
+    <string name="library_title">Laeborari ya me</string>
+    <string name="wishlist_title">Lenane la ditakatso</string>
+    <string name="profile_title">Porofaele</string>
+    <string name="placeholder_coming_soon">Sekirini se se tla tla gaufi.</string>
+
+    <string name="settings_title">Dithulaganyo</string>
+    <string name="settings_appearance">Ponagalo</string>
+    <string name="settings_language">Puo</string>
+    <string name="settings_notifications">Dikitsiso</string>
+    <string name="settings_data">Data</string>
+    <string name="settings_account">Akhaonto</string>
+    <string name="settings_about">Ka ga</string>
+    <string name="settings_sign_out">Tswa</string>
+    <string name="settings_version">Kgatiso %1$s</string>
+    <string name="common_back">Morago</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- isiZulu (zu). DRAFT translations - have a fluent speaker review before the demo video. -->
+<resources>
+    <string name="app_name" translatable="false">GameHub</string>
+
+    <string name="nav_discover">Hlola</string>
+    <string name="nav_search">Sesha</string>
+    <string name="nav_library">Umtapo</string>
+    <string name="nav_wishlist">Izifiso</string>
+    <string name="nav_profile">Iphrofayela</string>
+
+    <string name="onboarding_skip">Yeqa</string>
+    <string name="onboarding_next">Okulandelayo</string>
+    <string name="onboarding_get_started">Qala</string>
+    <string name="onboarding_title_1">Thola izinkulungwane zemidlalo</string>
+    <string name="onboarding_body_1">Phequlula imidlalo kumapulatifomu wonke. Thola imidlalo ngohlobo, isilinganiso nonyaka wokukhishwa.</string>
+    <string name="onboarding_title_2">Akha umtapo wakho wemidlalo</string>
+    <string name="onboarding_body_2">Londoloza imidlalo futhi ulandelele lena ofuna ukuyidlala, oyidlalayo nesiyiqedile.</string>
+    <string name="onboarding_title_3">Qhathanisa, londoloza futhi uthole</string>
+    <string name="onboarding_body_3">Qhathanisa imidlalo emibili, noma uvumele i-Ngimangaze ikukhethele umdlalo olandelayo.</string>
+
+    <string name="auth_welcome_back">Siyakwamukela futhi</string>
+    <string name="auth_sign_in_subtitle">Ngena ku-akhawunti yakho ye-GameHub</string>
+    <string name="auth_email">I-imeyili</string>
+    <string name="auth_password">Iphasiwedi</string>
+    <string name="auth_forgot_password">Ukhohlwe iphasiwedi?</string>
+    <string name="auth_sign_in">Ngena</string>
+    <string name="auth_no_account">Awunayo i-akhawunti?</string>
+    <string name="auth_register">Bhalisa</string>
+    <string name="auth_create_account_title">Dala i-akhawunti yakho</string>
+    <string name="auth_username">Igama lomsebenzisi</string>
+    <string name="auth_confirm_password">Qinisekisa iphasiwedi</string>
+    <string name="auth_have_account">Usunayo i-akhawunti?</string>
+    <string name="auth_create_account_button">Dala i-akhawunti</string>
+    <string name="auth_show_password">Bonisa iphasiwedi</string>
+    <string name="auth_hide_password">Fihla iphasiwedi</string>
+
+    <string name="home_welcome">Siyakwamukela futhi</string>
+    <string name="home_search_hint">Sesha imidlalo…</string>
+    <string name="home_surprise_title">Ngimangaze</string>
+    <string name="home_surprise_subtitle">Thola umdlalo ongahleliwe ongawuthanda</string>
+    <string name="home_trending">Okuthandwayo manje</string>
+    <string name="home_popular">Imidlalo edumile</string>
+
+    <string name="search_title">Sesha</string>
+    <string name="library_title">Umtapo wami</string>
+    <string name="wishlist_title">Uhlu lwezifiso</string>
+    <string name="profile_title">Iphrofayela</string>
+    <string name="placeholder_coming_soon">Lesi sikrini siyeza maduze.</string>
+
+    <string name="settings_title">Amasethingi</string>
+    <string name="settings_appearance">Ukubukeka</string>
+    <string name="settings_language">Ulimi</string>
+    <string name="settings_notifications">Izaziso</string>
+    <string name="settings_data">Idatha</string>
+    <string name="settings_account">I-akhawunti</string>
+    <string name="settings_about">Mayelana</string>
+    <string name="settings_sign_out">Phuma</string>
+    <string name="settings_version">Inguqulo %1$s</string>
+    <string name="common_back">Emuva</string>
+</resources>
