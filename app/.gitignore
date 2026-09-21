@@ -1,1 +1,15 @@
-/build
+# IDE
+.idea/
+
+# Build output in every module
+**/build/
+
+# Secrets (never commit these)
+.env
+**/.env
+*.jks
+*.keystore
+keystore.properties
+
+# Backend
+node_modules/
