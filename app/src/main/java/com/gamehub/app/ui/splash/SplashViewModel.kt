@@ -16,8 +16,8 @@ class SplashViewModel(
             authRepository.currentUser
         ) { onboardingSeen, currentUser ->
             when {
-                !onboardingSeen -> Screen.Onboarding.route
                 currentUser != null -> Screen.Home.route
+                !onboardingSeen -> Screen.Onboarding.route
                 else -> Screen.Login.route
             }
         }.first()
