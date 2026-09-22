@@ -31,7 +31,7 @@ Given the number of games that appear each year on multiple platforms (PC, PlayS
 
 The Purpose of GameHub
 1. Game Discovery Gateway
-GameHub acts as a bridge to the world of video games. Using IGDB API (Internet Game Database), GameHub gives its users access to an extensive database about all kinds of games — names, dates of release, genres, platforms, ratings, descriptions, images, developers and publishers in one easy-to-use mobile interface.
+GameHub acts as a bridge to the world of video games. Using IGDB API (Internet Game Database), GameHub gives its users access to an extensive database about all kinds of games names, dates of release, genres, platforms, ratings, descriptions, images, developers and publishers in one easy-to-use mobile interface.
 
 2. Game Library Management
 Apart from being a platform for discovery, GameHub also lets its users create and manage their personal libraries of games. The games are organized in various statuses like Want to Play, Playing and Completed.
@@ -159,7 +159,7 @@ AI output was never assumed accurate. Information was cross-checked against offi
 
 5. Academic Integrity
 
-All key decisions architecture, features, UI, database structure, API design, testing approach and final implementation — were made by the project team. AI tools are not authors of this project, as they cannot take responsibility for its academic or technical integrity (University of Johannesburg, 2023).
+All key decisions architecture, features, UI, database structure, API design, testing approach and final implementation were made by the project team. AI tools are not authors of this project, as they cannot take responsibility for its academic or technical integrity (University of Johannesburg, 2023).
 
 6. Responsibility Statement
 
