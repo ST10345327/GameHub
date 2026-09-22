@@ -18,7 +18,7 @@ compare titles and get a random recommendation with **Surprise Me**.
 
 ## Demo video
 
-_Link to be added (YouTube, unlisted)._
+https://youtu.be/T6mjEAAWMFs
 
 ## Purpose of the app
 
