@@ -4,7 +4,7 @@
 # Build output in every module
 **/build/
 
-# Secrets (never commit these)
+# Secrets (never commit these) Never commit your keystore files or passwords to version control. Use a local properties file instead.
 .env
 **/.env
 *.jks
