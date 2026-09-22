@@ -51,9 +51,10 @@ import com.gamehub.app.ui.common.messageRes
 import com.gamehub.app.ui.components.FilterPill
 import com.gamehub.app.ui.components.GameCover
 import com.gamehub.app.ui.components.RatingBadge
+import androidx.compose.material.icons.filled.CompareArrows
 
 @Composable
-fun GameDetailsScreen(viewModel: GameDetailsViewModel, onBack: () -> Unit) {
+fun GameDetailsScreen(viewModel: GameDetailsViewModel, onBack: () -> Unit, onCompareClick: () -> Unit) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
     val colors = MaterialTheme.colorScheme
 
@@ -99,7 +100,8 @@ fun GameDetailsScreen(viewModel: GameDetailsViewModel, onBack: () -> Unit) {
                             isUpdating = state.isUpdating,
                             onToggleFavourite = viewModel::toggleFavourite,
                             onToggleWishlist = viewModel::toggleWishlist,
-                            onSetLibraryStatus = viewModel::setLibraryStatus
+                            onSetLibraryStatus = viewModel::setLibraryStatus,
+                            onCompareClick = onCompareClick
                         )
 
                         if (!details.description.isNullOrBlank()) {
@@ -139,7 +141,8 @@ private fun ActionRow(
     isUpdating: Boolean,
     onToggleFavourite: () -> Unit,
     onToggleWishlist: () -> Unit,
-    onSetLibraryStatus: (LibraryStatus?) -> Unit
+    onSetLibraryStatus: (LibraryStatus?) -> Unit,
+    onCompareClick: () -> Unit
 ) {
     val colors = MaterialTheme.colorScheme
     Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
@@ -157,6 +160,9 @@ private fun ActionRow(
                     contentDescription = stringResource(R.string.details_wishlist),
                     tint = if (isInWishlist) colors.primary else colors.onSurfaceVariant
                 )
+            }
+            IconButton(onClick = onCompareClick) {
+                Icon(Icons.Filled.CompareArrows, contentDescription = stringResource(R.string.details_compare), tint = colors.onSurfaceVariant)
             }
         }
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {

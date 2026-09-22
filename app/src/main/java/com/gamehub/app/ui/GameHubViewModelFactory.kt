@@ -1,5 +1,6 @@
 package com.gamehub.app.ui
 
+import com.gamehub.app.ui.settings.SettingsViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
@@ -12,6 +13,7 @@ import com.gamehub.app.ui.search.SearchViewModel
 import com.gamehub.app.ui.session.SessionViewModel
 import com.gamehub.app.ui.splash.SplashViewModel
 import com.gamehub.app.ui.wishlist.WishlistViewModel
+import com.gamehub.app.ui.surprise.SurpriseMeViewModel
 
 /**
  * Tells Android how to build each ViewModel that doesn't need a navigation argument.
@@ -26,4 +28,6 @@ fun gameHubViewModelFactory(container: AppContainer): ViewModelProvider.Factory 
     initializer { SearchViewModel(container.gameRepository) }
     initializer { LibraryViewModel(container.libraryRepository) }
     initializer { WishlistViewModel(container.libraryRepository) }
+    initializer { SurpriseMeViewModel(container.gameRepository) }
+    initializer { SettingsViewModel(container.settingsRepository) }
 }

@@ -42,4 +42,10 @@ class ScreenRoutesTest {
     fun settings_isNotATab() {
         assertFalse(Screen.Settings.route in bottomBarRoutes)
     }
+
+    @Test
+    fun publicRoutes_areNeverBottomBarTabs() {
+        assertTrue(publicRoutes.none { it in bottomBarRoutes })
+        assertTrue(Screen.Home.route !in publicRoutes)
+    }
 }

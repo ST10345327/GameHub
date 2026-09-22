@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <string name="theme_system">Se Tlwaelegileng sa Sesteme</string>
+    <string name="theme_light">Lesedi</string>
+    <string name="theme_dark">Lefifi</string>
+
     <string name="app_name" translatable="false">GameHub</string>
 
     <string name="nav_discover">Sekaseka</string>
@@ -121,6 +126,21 @@
     <string name="details_developer">Modiri</string>
     <string name="details_publisher">Mogatisi</string>
     <string name="details_similar_games">Metshameko e e tshwanang</string>
+    <string name="details_compare">Bapisa</string>
+
+    <string name="compare_title">Bapisa Metshameko</string>
+    <string name="compare_select_game_a">Kgetha motshameko wa ntlha</string>
+    <string name="compare_select_game_b">Kgetha motshameko wa bobedi</string>
+    <string name="compare_pick_game">Kgetha motshameko o o ka o bapisang</string>
+    <string name="compare_row_rating">Tekanyo</string>
+    <string name="compare_row_release_date">Letsatsi la go ntshiwa</string>
+    <string name="compare_row_genre">Mofuta</string>
+    <string name="compare_row_platforms">Diphaterefomo</string>
+    <string name="compare_row_developer">Modiri</string>
+    <string name="compare_row_publisher">Mogatisi</string>
+
+    <string name="surprise_view_details">Bona Dintlha</string>
+    <string name="surprise_try_another">Leka o Mongwe</string>
 
     <string name="profile_title">Porofaele</string>
     <string name="placeholder_coming_soon">Sekirini se se tla tla gaufi.</string>

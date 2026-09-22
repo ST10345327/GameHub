@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <string name="theme_system">Okuzenzakalelayo Kwesistimu</string>
+    <string name="theme_light">Okukhanyayo</string>
+    <string name="theme_dark">Okumnyama</string>
+
     <string name="app_name" translatable="false">GameHub</string>
 
     <string name="nav_discover">Hlola</string>
@@ -121,6 +126,21 @@
     <string name="details_developer">Umenzi</string>
     <string name="details_publisher">Umshicileli</string>
     <string name="details_similar_games">Imidlalo efanayo</string>
+    <string name="details_compare">Qhathanisa</string>
+
+    <string name="compare_title">Qhathanisa Imidlalo</string>
+    <string name="compare_select_game_a">Khetha umdlalo wokuqala</string>
+    <string name="compare_select_game_b">Khetha umdlalo wesibili</string>
+    <string name="compare_pick_game">Khetha umdlalo ozowuqhathanisa</string>
+    <string name="compare_row_rating">Isilinganiso</string>
+    <string name="compare_row_release_date">Usuku lokukhishwa</string>
+    <string name="compare_row_genre">Uhlobo</string>
+    <string name="compare_row_platforms">Amapulatifomu</string>
+    <string name="compare_row_developer">Umenzi</string>
+    <string name="compare_row_publisher">Umshicileli</string>
+
+    <string name="surprise_view_details">Buka Imininingwane</string>
+    <string name="surprise_try_another">Zama Omunye</string>
 
     <string name="profile_title">Iphrofayela</string>
     <string name="placeholder_coming_soon">Lesi sikrini siyeza maduze.</string>

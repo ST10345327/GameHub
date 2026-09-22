@@ -1,5 +1,6 @@
 package com.gamehub.app.ui.navigation
 
+import com.gamehub.app.ui.settings.SettingsViewModel
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.statusBarsPadding
@@ -46,6 +47,10 @@ import com.gamehub.app.ui.settings.SettingsScreen
 import com.gamehub.app.ui.splash.SplashScreen
 import com.gamehub.app.ui.wishlist.WishlistScreen
 import com.gamehub.app.ui.wishlist.WishlistViewModel
+import com.gamehub.app.ui.compare.CompareScreen
+import com.gamehub.app.ui.compare.CompareViewModel
+import com.gamehub.app.ui.surprise.SurpriseMeScreen
+import com.gamehub.app.ui.surprise.SurpriseMeViewModel
 import com.gamehub.app.utils.AppLogger
 
 /** Root composable: owns the NavController, the bottom bar and every route. */
@@ -133,7 +138,7 @@ fun GameHubNavHost(
                     viewModel = homeViewModel,
                     userName = currentUser?.username.orEmpty(),
                     onSearchClick = { navController.navigateToTab(Screen.Search.route) },
-                    onSurpriseMeClick = { AppLogger.debug("Surprise Me tapped (built in a later phase)") },
+                    onSurpriseMeClick = { navController.navigate(Screen.SurpriseMe.route) },
                     onGameClick = { gameId -> navController.navigate(Screen.GameDetails.createRoute(gameId)) }
                 )
             }
@@ -170,7 +175,8 @@ fun GameHubNavHost(
             }
 
             composable(Screen.Settings.route) {
-                SettingsScreen(onBack = { navController.popBackStack() })
+                val settingsViewModel: SettingsViewModel = viewModel(factory = viewModelFactory)
+                SettingsScreen(viewModel = settingsViewModel, onBack = { navController.popBackStack() })
             }
 
             composable(
@@ -181,7 +187,31 @@ fun GameHubNavHost(
                 val detailsViewModel: GameDetailsViewModel = viewModel(
                     factory = GameDetailsViewModel.factory(gameId, container.gameRepository, container.libraryRepository)
                 )
-                GameDetailsScreen(viewModel = detailsViewModel, onBack = { navController.popBackStack() })
+                GameDetailsScreen(
+                    viewModel = detailsViewModel, 
+                    onBack = { navController.popBackStack() },
+                    onCompareClick = { navController.navigate(Screen.Compare.createRoute(gameId)) }
+                )
+            }
+
+            composable(Screen.SurpriseMe.route) {
+                val surpriseViewModel: SurpriseMeViewModel = viewModel(factory = viewModelFactory)
+                SurpriseMeScreen(
+                    viewModel = surpriseViewModel,
+                    onBack = { navController.popBackStack() },
+                    onViewDetails = { gameId -> navController.navigate(Screen.GameDetails.createRoute(gameId)) }
+                )
+            }
+
+            composable(
+                route = Screen.Compare.route,
+                arguments = listOf(navArgument("firstGameId") { type = NavType.IntType })
+            ) { entry ->
+                val firstGameId = entry.arguments?.getInt("firstGameId") ?: return@composable
+                val compareViewModel: CompareViewModel = viewModel(
+                    factory = CompareViewModel.factory(firstGameId, container.gameRepository)
+                )
+                CompareScreen(viewModel = compareViewModel, onBack = { navController.popBackStack() })
             }
         }
     }

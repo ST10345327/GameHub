@@ -1,5 +1,8 @@
 package com.gamehub.app.di
 
+import com.gamehub.app.data.local.SettingsStore
+import com.gamehub.app.data.repository.SettingsRepository
+import com.gamehub.app.data.repository.SettingsRepositoryImpl
 import android.content.Context
 import android.content.pm.ApplicationInfo
 import com.gamehub.app.data.local.SessionStore
@@ -26,6 +29,9 @@ class AppContainer(context: Context) {
 
     private val appContext = context.applicationContext
     private val sessionStore = SessionStore(appContext.gameHubDataStore)
+
+    private val settingsStore = SettingsStore(appContext.gameHubDataStore)
+    val settingsRepository: SettingsRepository = SettingsRepositoryImpl(settingsStore)
     private val apiCaller = ApiCaller(onSessionExpired = { sessionStore.clear() })
     private val okHttpClient: OkHttpClient = buildOkHttpClient()
 

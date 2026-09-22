@@ -7,11 +7,7 @@ import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
-/**
- * The three appearance options from the Settings design.
- * In Phase 5 this value is saved in DataStore and passed into [GameHubTheme].
- */
-enum class ThemeMode { SYSTEM, LIGHT, DARK }
+import com.gamehub.app.data.model.ThemeMode
 
 private val DarkColors = darkColorScheme(
     primary = GameHubRed,

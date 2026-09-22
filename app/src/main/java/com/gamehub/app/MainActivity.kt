@@ -4,7 +4,12 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.runtime.getValue
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.gamehub.app.ui.gameHubViewModelFactory
 import com.gamehub.app.ui.navigation.GameHubNavHost
+import com.gamehub.app.ui.settings.SettingsViewModel
 import com.gamehub.app.ui.theme.GameHubTheme
 import com.gamehub.app.utils.AppLogger
 
@@ -15,8 +20,14 @@ class MainActivity : ComponentActivity() {
         AppLogger.debug("MainActivity created")
 
         val container = (application as GameHubApplication).container
+        val viewModelFactory = gameHubViewModelFactory(container)
+
         setContent {
-            GameHubTheme {
+            // Shared instance so the theme reacts the instant Settings changes it, from anywhere in the app.
+            val settingsViewModel: SettingsViewModel = viewModel(factory = viewModelFactory)
+            val settings by settingsViewModel.uiState.collectAsStateWithLifecycle()
+
+            GameHubTheme(themeMode = settings.themeMode) {
                 GameHubNavHost(container = container)
             }
         }

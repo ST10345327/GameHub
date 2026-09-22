@@ -59,13 +59,4 @@ class ApiCallerTest {
     fun anythingUnexpected_becomesUnknown_insteadOfCrashing() = runTest {
         assertEquals(ApiResult.Failure(ApiError.Unknown), caller.call<Unit> { throw IllegalStateException("bug") })
     }
-
-
-    @Test
-    fun publicRoutes_areNeverBottomBarTabs() {
-        assertTrue(publicRoutes.none { it in bottomBarRoutes })
-        assertTrue(Screen.Home.route !in publicRoutes)
-    }
-
-
 }

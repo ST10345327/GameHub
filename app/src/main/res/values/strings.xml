@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <string name="theme_system">System Default</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
     <string name="app_name" translatable="false">GameHub</string>
 
     <string name="nav_discover">Discover</string>
@@ -121,6 +126,21 @@
     <string name="details_developer">Developer</string>
     <string name="details_publisher">Publisher</string>
     <string name="details_similar_games">Similar games</string>
+    <string name="details_compare">Compare</string>
+
+    <string name="compare_title">Compare Games</string>
+    <string name="compare_select_game_a">Select first game</string>
+    <string name="compare_select_game_b">Select second game</string>
+    <string name="compare_pick_game">Pick a game to compare</string>
+    <string name="compare_row_rating">Rating</string>
+    <string name="compare_row_release_date">Release Date</string>
+    <string name="compare_row_genre">Genre</string>
+    <string name="compare_row_platforms">Platforms</string>
+    <string name="compare_row_developer">Developer</string>
+    <string name="compare_row_publisher">Publisher</string>
+
+    <string name="surprise_view_details">View Details</string>
+    <string name="surprise_try_another">Try Another</string>
 
     <string name="profile_title">Profile</string>
     <string name="placeholder_coming_soon">This screen is coming soon.</string>
