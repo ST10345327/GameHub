@@ -9,12 +9,15 @@ compare titles and get a random recommendation with **Surprise Me**.
 **Module:** OPSC6311 - Part 2: App Prototype Development
 
 ## Team
+Student names & Numbers: 
 
-| Student number | Name |
-| --- | --- |
-| ST10345327 | Olebogeng Phawe |
-| ST10449154 | Mbuso Sbusiso Dube |
-| ST10437200 | Nkosikhona Dlamini |
+ST10345327, Olebogeng Phawe 
+
+ST10449154, Mbuso Sbusiso Dube 
+
+ST10437200, Nkosikhona Dlamini 
+
+
 
 ## Demo video
 
