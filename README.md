@@ -156,17 +156,21 @@ AI output was never assumed accurate. Information was cross-checked against offi
 
 5. Academic Integrity
 
-All key decisions — architecture, features, UI, database structure, API design, testing approach and final implementation — were made by the project team. AI tools are not authors of this project, as they cannot take responsibility for its academic or technical integrity (University of Johannesburg, 2023).
+All key decisions architecture, features, UI, database structure, API design, testing approach and final implementation — were made by the project team. AI tools are not authors of this project, as they cannot take responsibility for its academic or technical integrity (University of Johannesburg, 2023).
 
 6. Responsibility Statement
 
 We confirm that AI was used solely as a supporting tool, that all AI-generated suggestions were reviewed and tested, and that we remain fully responsible for the accuracy, functionality and integrity of the submitted GameHub project.
 
-Student name(s): ___________________
-Student number(s): ___________________
-Signature(s): ___________________
-Date: ___________________
+Student names & Numbers: 
 
+ST10345327, Olebogeng Phawe 
+
+ST10449154, Mbuso Sbusiso Dube 
+
+ST10437200, Nkosikhona Dlamini 
+
+Date: 22 Sep 2026 
 ## References
 
 - Android Developers (2026) *Navigation with Compose*. Available at: https://developer.android.com/develop/ui/compose/navigation
