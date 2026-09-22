@@ -1,4 +1,4 @@
-# GameHub
+# Loot - Gamehub
 
 ![Android CI](https://github.com/ST10345327/GameHub/actions/workflows/build.yml/badge.svg)
 
@@ -22,7 +22,7 @@ _Link to be added (YouTube, unlisted)._
 
 ## Purpose of the app
 
-_Short description of the problem GameHub solves - adapt from the Part 1 Planning & Design document._
+_Short description of the problem Loot - Gamehub solves - adapt from the Part 1 Planning & Design document._
 
 ## Design considerations
 

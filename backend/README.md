@@ -1,6 +1,6 @@
-# GameHub API
+# Loot - Gamehub API
 
-Node.js + Express + MySQL REST API for the GameHub Android app.
+Node.js + Express + MySQL REST API for the Loot - Gamehub Android app.
 
 - **Accounts:** register / login with bcrypt-hashed passwords and JWT tokens.
 - **Personal data:** library (with status), favourites, wishlist, recently viewed, user settings.

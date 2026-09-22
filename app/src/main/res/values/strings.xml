@@ -5,7 +5,7 @@
     <string name="theme_light">Light</string>
     <string name="theme_dark">Dark</string>
 
-    <string name="app_name" translatable="false">GameHub</string>
+    <string name="app_name">Loot - Gamehub</string>
 
     <string name="nav_discover">Discover</string>
     <string name="nav_search">Search</string>
@@ -24,7 +24,7 @@
     <string name="onboarding_body_3">Compare two games side by side, or let Surprise Me pick your next game.</string>
 
     <string name="auth_welcome_back">Welcome back</string>
-    <string name="auth_sign_in_subtitle">Sign in to your GameHub account</string>
+    <string name="auth_sign_in_subtitle">Sign in to your Loot - Gamehub account</string>
     <string name="auth_email">Email</string>
     <string name="auth_password">Password</string>
     <string name="auth_forgot_password">Forgot password?</string>

@@ -18,6 +18,6 @@ class GameHubApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         container = AppContainer(this)
-        AppLogger.debug("GameHub application started")
+        AppLogger.debug("Loot - Gamehub application started")
     }
 }

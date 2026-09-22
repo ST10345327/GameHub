@@ -44,7 +44,7 @@ function createApp({ config, pool, gameService, rateLimits = {} }) {
     rateLimit({ windowMs: 15 * 60 * 1000, limit: globalMax, standardHeaders: 'draft-7', legacyHeaders: false, handler: tooManyRequests })
   );
 
-  app.get('/', (req, res) => res.json({ name: 'GameHub API', status: 'ok' }));
+  app.get('/', (req, res) => res.json({ name: 'Loot - Gamehub API', status: 'ok' }));
   app.get(
     '/health',
     asyncHandler(async (req, res) => {

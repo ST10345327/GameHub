@@ -5,7 +5,7 @@
     <string name="theme_light">Lesedi</string>
     <string name="theme_dark">Lefifi</string>
 
-    <string name="app_name" translatable="false">GameHub</string>
+    <string name="app_name">Loot - Gamehub</string>
 
     <string name="nav_discover">Sekaseka</string>
     <string name="nav_search">Batla</string>
@@ -24,7 +24,7 @@
     <string name="onboarding_body_3">Bapisa metshameko e le pedi, kgotsa o letle Nkgakgamatse e go kgethele motshameko o o latelang.</string>
 
     <string name="auth_welcome_back">Re a go amogela gape</string>
-    <string name="auth_sign_in_subtitle">Tsena mo akhaonteng ya gago ya GameHub</string>
+    <string name="auth_sign_in_subtitle">Tsena mo akhaonteng ya gago ya Loot - Gamehub</string>
     <string name="auth_email">Imeile</string>
     <string name="auth_password">Lefoko la sephiri</string>
     <string name="auth_forgot_password">O lebetse lefoko la sephiri?</string>

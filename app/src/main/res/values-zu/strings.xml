@@ -5,7 +5,7 @@
     <string name="theme_light">Okukhanyayo</string>
     <string name="theme_dark">Okumnyama</string>
 
-    <string name="app_name" translatable="false">GameHub</string>
+    <string name="app_name">Loot - Gamehub</string>
 
     <string name="nav_discover">Hlola</string>
     <string name="nav_search">Sesha</string>
@@ -24,7 +24,7 @@
     <string name="onboarding_body_3">Qhathanisa imidlalo emibili, noma uvumele i-Ngimangaze ikukhethele umdlalo olandelayo.</string>
 
     <string name="auth_welcome_back">Siyakwamukela futhi</string>
-    <string name="auth_sign_in_subtitle">Ngena ku-akhawunti yakho ye-GameHub</string>
+    <string name="auth_sign_in_subtitle">Ngena ku-akhawunti yakho ye-Loot - Gamehub</string>
     <string name="auth_email">I-imeyili</string>
     <string name="auth_password">Iphasiwedi</string>
     <string name="auth_forgot_password">Ukhohlwe iphasiwedi?</string>
