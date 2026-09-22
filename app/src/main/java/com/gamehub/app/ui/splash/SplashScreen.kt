@@ -1,6 +1,5 @@
 package com.gamehub.app.ui.splash
 
-import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -24,22 +23,26 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.gamehub.app.R
+import com.gamehub.app.utils.AppLogger
 import kotlinx.coroutines.delay
 
-private const val TAG = "SplashScreen"
-private const val SPLASH_DURATION_MS = 1500L
+private const val SPLASH_DURATION_MS = 1200L
 
-/** Shows the app mark briefly, then calls [onFinished]. The final Canva icon replaces the placeholder mark later. */
+/**
+ * Shows the app mark briefly while the saved session is read, then calls [onFinished] with the
+ * route to open first (Home, Login or Onboarding).
+ */
 @Composable
-fun SplashScreen(onFinished: () -> Unit) {
+fun SplashScreen(viewModel: SplashViewModel, onFinished: (startRoute: String) -> Unit) {
     // Always call the latest lambda, even if the composable recomposes during the delay.
     val currentOnFinished by rememberUpdatedState(onFinished)
 
     LaunchedEffect(Unit) {
-        Log.d(TAG, "Splash shown")
+        AppLogger.debug("Splash shown")
+        val route = viewModel.resolveStartRoute()
         delay(SPLASH_DURATION_MS)
-        Log.d(TAG, "Splash finished")
-        currentOnFinished()
+        AppLogger.debug("Splash finished, starting at $route")
+        currentOnFinished(route)
     }
 
     Box(

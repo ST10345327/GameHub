@@ -1,0 +1,35 @@
+package com.gamehub.app.ui.session
+
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.gamehub.app.data.model.User
+import com.gamehub.app.data.repository.AuthRepository
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.launch
+
+/**
+ * App-wide view of the sign-in state. The navigation host watches [isLoggedIn]: when it turns
+ * false (sign out, or the server rejecting an expired token) the user is sent to Login.
+ */
+class SessionViewModel(private val authRepository: AuthRepository) : ViewModel() {
+
+    /** The signed-in user, or null. */
+    val currentUser: StateFlow<User?> = authRepository.currentUser
+        .stateIn(viewModelScope, SharingStarted.Eagerly, null)
+
+    /** null while the saved session is still being read from disk; then true or false. */
+    val isLoggedIn: StateFlow<Boolean?> = authRepository.currentUser
+        .map { user -> user != null }
+        .stateIn(viewModelScope, SharingStarted.Eagerly, null)
+
+    fun signOut() {
+        viewModelScope.launch { authRepository.signOut() }
+    }
+
+    fun markOnboardingSeen() {
+        viewModelScope.launch { authRepository.markOnboardingSeen() }
+    }
+}

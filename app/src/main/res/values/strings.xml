@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- English (default). Every string in the app lives here or in values-tn / values-zu. -->
 <resources>
     <string name="app_name" translatable="false">GameHub</string>
 
-    <!-- Bottom navigation -->
     <string name="nav_discover">Discover</string>
     <string name="nav_search">Search</string>
     <string name="nav_library">Library</string>
     <string name="nav_wishlist">Wishlist</string>
     <string name="nav_profile">Profile</string>
 
-    <!-- Onboarding -->
     <string name="onboarding_skip">Skip</string>
     <string name="onboarding_next">Next</string>
     <string name="onboarding_get_started">Get started</string>
@@ -21,7 +18,6 @@
     <string name="onboarding_title_3">Compare, save and discover</string>
     <string name="onboarding_body_3">Compare two games side by side, or let Surprise Me pick your next game.</string>
 
-    <!-- Authentication -->
     <string name="auth_welcome_back">Welcome back</string>
     <string name="auth_sign_in_subtitle">Sign in to your GameHub account</string>
     <string name="auth_email">Email</string>
@@ -37,23 +33,98 @@
     <string name="auth_create_account_button">Create account</string>
     <string name="auth_show_password">Show password</string>
     <string name="auth_hide_password">Hide password</string>
+    <string name="auth_password_hint">At least 8 characters, including a number.</string>
 
-    <!-- Home -->
+    <string name="forgot_title">Reset your password</string>
+    <string name="forgot_body">Enter your email and we\'ll send reset instructions.</string>
+    <string name="forgot_send">Send</string>
+    <string name="forgot_done">If an account exists for that email, reset instructions have been sent.</string>
+
+    <string name="common_back">Back</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_close">Close</string>
+    <string name="common_retry">Try again</string>
+    <string name="common_remove">Remove</string>
+
+    <string name="field_required">This field is required.</string>
+    <string name="field_invalid_email">Enter a valid email address.</string>
+    <string name="field_username_length">Username must be 3 to 30 characters.</string>
+    <string name="field_username_chars">Use only letters, numbers and underscores.</string>
+    <string name="field_password_short">Password must be at least 8 characters.</string>
+    <string name="field_password_long">Password must be at most 72 characters.</string>
+    <string name="field_password_number">Password must include a number.</string>
+    <string name="field_passwords_mismatch">Passwords do not match.</string>
+    <string name="field_email_taken">This email is already registered.</string>
+    <string name="field_username_taken">This username is already taken.</string>
+
+    <string name="error_no_connection">No internet connection. Check your network and try again.</string>
+    <string name="error_timeout">The server took too long to respond. Please try again.</string>
+    <string name="error_session_expired">Your session has expired. Please sign in again.</string>
+    <string name="error_invalid_credentials">Incorrect email or password.</string>
+    <string name="error_wrong_password">The current password is incorrect.</string>
+    <string name="error_not_found">We couldn\'t find that.</string>
+    <string name="error_rate_limited">Too many attempts. Please wait a moment and try again.</string>
+    <string name="error_service_unavailable">The game service is unavailable right now. Try again later.</string>
+    <string name="error_validation">Please check the details you entered.</string>
+    <string name="error_server">Something went wrong on our side. Please try again.</string>
+    <string name="error_unknown">Something went wrong. Please try again.</string>
+
     <string name="home_welcome">Welcome back</string>
     <string name="home_search_hint">Search games…</string>
     <string name="home_surprise_title">Surprise Me</string>
     <string name="home_surprise_subtitle">Find a random game you might love</string>
     <string name="home_trending">Trending now</string>
     <string name="home_popular">Popular games</string>
+    <string name="home_see_all">See all</string>
 
-    <!-- Screen titles / placeholders -->
     <string name="search_title">Search</string>
+    <string name="search_hint">Search for a game…</string>
+    <string name="search_filters">Filters</string>
+    <string name="search_no_results">No games matched your search.</string>
+    <string name="search_browse_genre">Browse by genre</string>
+    <string name="search_genre">Genre</string>
+    <string name="search_platform">Platform</string>
+    <string name="search_min_rating">Minimum rating: %1$d</string>
+    <string name="search_release_period">Release period</string>
+    <string name="search_sort_by">Sort by</string>
+    <string name="search_any">Any</string>
+    <string name="search_clear_filters">Clear filters</string>
+    <string name="search_apply">Apply</string>
+
+    <string name="period_any">Any</string>
+    <string name="period_last_year">Last year</string>
+    <string name="period_last_five_years">Last 5 years</string>
+    <string name="period_classic">Classic (before 2010)</string>
+
+    <string name="sort_relevance">Relevance</string>
+    <string name="sort_rating">Rating</string>
+    <string name="sort_release_date">Release date</string>
+    <string name="sort_title">Title</string>
+
     <string name="library_title">My library</string>
+    <string name="library_count">%1$d games</string>
+    <string name="library_all">All</string>
+    <string name="library_want_to_play">Want to Play</string>
+    <string name="library_playing">Playing</string>
+    <string name="library_completed">Completed</string>
+    <string name="library_empty">No games here yet. Add some from Search or a game\'s details page.</string>
+
     <string name="wishlist_title">Wishlist</string>
+    <string name="wishlist_tab_wishlist">Wishlist</string>
+    <string name="wishlist_tab_favourites">Favourites</string>
+    <string name="wishlist_empty">Your wishlist is empty.</string>
+    <string name="favourites_empty">No favourites yet.</string>
+    <string name="wishlist_move_to_library">Move to library</string>
+
+    <string name="details_favourite">Favourite</string>
+    <string name="details_wishlist">Wishlist</string>
+    <string name="details_developer">Developer</string>
+    <string name="details_publisher">Publisher</string>
+    <string name="details_similar_games">Similar games</string>
+
     <string name="profile_title">Profile</string>
     <string name="placeholder_coming_soon">This screen is coming soon.</string>
 
-    <!-- Settings -->
     <string name="settings_title">Settings</string>
     <string name="settings_appearance">Appearance</string>
     <string name="settings_language">Language</string>
@@ -63,5 +134,4 @@
     <string name="settings_about">About</string>
     <string name="settings_sign_out">Sign out</string>
     <string name="settings_version">Version %1$s</string>
-    <string name="common_back">Back</string>
 </resources>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- isiZulu (zu). DRAFT translations - have a fluent speaker review before the demo video. -->
 <resources>
     <string name="app_name" translatable="false">GameHub</string>
 
@@ -34,6 +33,41 @@
     <string name="auth_create_account_button">Dala i-akhawunti</string>
     <string name="auth_show_password">Bonisa iphasiwedi</string>
     <string name="auth_hide_password">Fihla iphasiwedi</string>
+    <string name="auth_password_hint">Okungenani izinhlamvu ezingu-8, kuhlanganise nenombolo.</string>
+
+    <string name="forgot_title">Setha kabusha iphasiwedi yakho</string>
+    <string name="forgot_body">Faka i-imeyili yakho sizokuthumelela iziqondiso zokusetha kabusha.</string>
+    <string name="forgot_send">Thumela</string>
+    <string name="forgot_done">Uma kukhona i-akhawunti yaleyo imeyili, iziqondiso zokusetha kabusha zithunyelwe.</string>
+
+    <string name="common_back">Emuva</string>
+    <string name="common_cancel">Khansela</string>
+    <string name="common_close">Vala</string>
+    <string name="common_retry">Zama futhi</string>
+    <string name="common_remove">Susa</string>
+
+    <string name="field_required">Lokhu kuyadingeka.</string>
+    <string name="field_invalid_email">Faka ikheli le-imeyili elivumelekile.</string>
+    <string name="field_username_length">Igama lomsebenzisi kufanele libe nezinhlamvu ezingu-3 kuya kwezingu-30.</string>
+    <string name="field_username_chars">Sebenzisa izinhlamvu, izinombolo nomugqa ophansi kuphela.</string>
+    <string name="field_password_short">Iphasiwedi kufanele ibe nezinhlamvu okungenani ezingu-8.</string>
+    <string name="field_password_long">Iphasiwedi akufanele idlule izinhlamvu ezingu-72.</string>
+    <string name="field_password_number">Iphasiwedi kufanele iqukathe inombolo.</string>
+    <string name="field_passwords_mismatch">Amaphasiwedi awafani.</string>
+    <string name="field_email_taken">I-imeyili isibhalisiwe kakade.</string>
+    <string name="field_username_taken">Igama lomsebenzisi seselithathiwe.</string>
+
+    <string name="error_no_connection">Awukho uxhumano ne-inthanethi. Hlola inethiwekhi yakho uphinde uzame futhi.</string>
+    <string name="error_timeout">Iseva ithathe isikhathi eside ukuphendula. Sicela uzame futhi.</string>
+    <string name="error_session_expired">Isikhathi sakho sesiphelile. Sicela ungene futhi.</string>
+    <string name="error_invalid_credentials">I-imeyili noma iphasiwedi akulungile.</string>
+    <string name="error_wrong_password">Iphasiwedi yamanje ayilungile.</string>
+    <string name="error_not_found">Asikutholanga lokho.</string>
+    <string name="error_rate_limited">Imizamo eminingi kakhulu. Sicela ulinde isikhashana uphinde uzame.</string>
+    <string name="error_service_unavailable">Isevisi yemidlalo ayitholakali okwamanje. Zama futhi kamuva.</string>
+    <string name="error_validation">Sicela uhlole imininingwane oyifake.</string>
+    <string name="error_server">Kukhona okungahambanga kahle ohlangothini lwethu. Sicela uzame futhi.</string>
+    <string name="error_unknown">Kukhona okungahambanga kahle. Sicela uzame futhi.</string>
 
     <string name="home_welcome">Siyakwamukela futhi</string>
     <string name="home_search_hint">Sesha imidlalo…</string>
@@ -41,10 +75,53 @@
     <string name="home_surprise_subtitle">Thola umdlalo ongahleliwe ongawuthanda</string>
     <string name="home_trending">Okuthandwayo manje</string>
     <string name="home_popular">Imidlalo edumile</string>
+    <string name="home_see_all">Bona konke</string>
 
     <string name="search_title">Sesha</string>
+    <string name="search_hint">Sesha umdlalo…</string>
+    <string name="search_filters">Izihlungi</string>
+    <string name="search_no_results">Akukho midlalo etholakele.</string>
+    <string name="search_browse_genre">Phequlula ngohlobo</string>
+    <string name="search_genre">Uhlobo</string>
+    <string name="search_platform">Ipulatifomu</string>
+    <string name="search_min_rating">Isilinganiso esiphansi: %1$d</string>
+    <string name="search_release_period">Isikhathi sokukhishwa</string>
+    <string name="search_sort_by">Hlunga nga</string>
+    <string name="search_any">Noma yikuphi</string>
+    <string name="search_clear_filters">Susa izihlungi</string>
+    <string name="search_apply">Sebenzisa</string>
+
+    <string name="period_any">Noma yisiphi</string>
+    <string name="period_last_year">Unyaka odlule</string>
+    <string name="period_last_five_years">Iminyaka emi-5 edlule</string>
+    <string name="period_classic">Endala (ngaphambi kuka-2010)</string>
+
+    <string name="sort_relevance">Ukufaneleka</string>
+    <string name="sort_rating">Isilinganiso</string>
+    <string name="sort_release_date">Usuku lokukhishwa</string>
+    <string name="sort_title">Isihloko</string>
+
     <string name="library_title">Umtapo wami</string>
+    <string name="library_count">Imidlalo engu-%1$d</string>
+    <string name="library_all">Konke</string>
+    <string name="library_want_to_play">Ngifuna Ukudlala</string>
+    <string name="library_playing">Ngiyadlala</string>
+    <string name="library_completed">Kuqediwe</string>
+    <string name="library_empty">Awukabi namidlalo. Engeza kusukela Kusesho noma ekhasini lemininingwane yomdlalo.</string>
+
     <string name="wishlist_title">Uhlu lwezifiso</string>
+    <string name="wishlist_tab_wishlist">Izifiso</string>
+    <string name="wishlist_tab_favourites">Okuthandwayo</string>
+    <string name="wishlist_empty">Uhlu lwakho lwezifiso alunalutho.</string>
+    <string name="favourites_empty">Awukabi nokuthandwayo.</string>
+    <string name="wishlist_move_to_library">Yisa emtapweni</string>
+
+    <string name="details_favourite">Okuthandwayo</string>
+    <string name="details_wishlist">Izifiso</string>
+    <string name="details_developer">Umenzi</string>
+    <string name="details_publisher">Umshicileli</string>
+    <string name="details_similar_games">Imidlalo efanayo</string>
+
     <string name="profile_title">Iphrofayela</string>
     <string name="placeholder_coming_soon">Lesi sikrini siyeza maduze.</string>
 
@@ -57,5 +134,4 @@
     <string name="settings_about">Mayelana</string>
     <string name="settings_sign_out">Phuma</string>
     <string name="settings_version">Inguqulo %1$s</string>
-    <string name="common_back">Emuva</string>
 </resources>
