@@ -7,6 +7,7 @@ import androidx.compose.ui.graphics.Color
 // Accent
 val GameHubRed = Color(0xFFE03131)           // dark theme accent
 val GameHubRedLight = Color(0xFFC62828)      // slightly deeper red so text stays readable on white
+val GameHubRedDeep = Color(0xFF8B0000)       // deep red for gradients
 
 // Red containers (chips, tags)
 val RedContainerDark = Color(0xFF3A1414)
