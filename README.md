@@ -117,43 +117,53 @@ Every push and pull request runs `.github/workflows/build.yml`, which runs the u
 
 ## AI use statement
 
-As part of the development of this project, Artificial Intelligence (AI) has been used as an aid to support our efforts, rather than replace them. The final outputs, design choices, and coding implementations in the project are the sole works of the team members, who bear full responsibility for the correctness and quality of the submitted project.
+DECLARATION OF ARTIFICIAL INTELLIGENCE USAGE
+GameHub Android Application Project
+Programme: Diploma in Information Technology – Software Development
+Institution: Rosebank College / The IIE
+Date: 22 September 2026
 
-AI Usage
-AI tools (like language models) have been used in the following capacities:
+1. Declaration
 
-Brainstorming/Ideation: AI was used to come up with ideas related to the features of the project and different approaches to solving the design problems. They were then critiqued and modified to include them in the project.
+We declare that Artificial Intelligence (AI) tools were used to support the planning, development, debugging, documentation and testing of the GameHub Android application. AI was used as a productivity aid, not as a substitute for our own knowledge, judgement or responsibility. The project team remains fully accountable for the design, implementation, testing and final submission of GameHub. This disclosure follows South African higher-education guidance recommending transparent acknowledgement of AI use (CPUT, 2026; University of Johannesburg, 2023).
 
-Improving Grammatical Language: AI was used to proofread and improve the written documents of the project, including this planning and design document.
+2. AI Tools Used
 
-Coding Help and Error Troubleshooting: AI was used to give us tips on error troubleshooting, coding, and Android development, and the best REST API design practices.
+ChatGPT (OpenAI): planning, technical explanations, troubleshooting and documentation support
+GitHub Copilot / AI coding assistant: code suggestions, completion and debugging
+IDE AI Agent: analysing project files, identifying errors, suggesting fixes
+Other AI tools: brainstorming, wording and general development assistance
 
-Documentation Help: AI gave suggestions regarding the structure and formatting of documentation, such as this README file and this planning document.
+3. Areas of Use
 
-Non-use of AI
-For maintaining academic integrity and authentic submission of work:
+Planning: AI helped brainstorm features and technical approaches, including game discovery, IGDB integration, authentication, libraries/wishlists, comparison, Surprise Me, settings, multilingual support (English, Setswana, isiZulu), and theming. Final decisions on scope and direction were made by the team based on assignment requirements and feasibility.
 
-AI did not create any of the core code of the application, UI, and architecture without substantial human intervention and modification.
+Development: AI assisted with Kotlin, Jetpack Compose, MVVM architecture, navigation, ViewModels/repositories, API integration, authentication, database work, Gradle configuration and error resolution. All suggestions were reviewed, tested and adapted by the team before inclusion.
 
-AI was not responsible for making any design or implementation decisions. Any design or implementation decision was made after thorough research and testing by the team.
+Backend: Support was used for Node.js/Express setup, database configuration, environment variables, API endpoints and debugging server errors. Fixes were verified through direct testing rather than accepted automatically.
 
-AI was not responsible for writing any part of the document which was then reviewed, edited, and validated by humans.
+Debugging: AI helped interpret compiler, Gradle, Android Studio, navigation, ViewModel, backend and database errors. Every suggested fix was tested to confirm it actually resolved the issue.
 
-AI was not responsible for generating false data, references or results. All the research and testing data are real.
+Documentation: AI assisted with structuring sections, improving grammar and readability, and explaining technical concepts. All content was reviewed and edited by the team to accurately reflect the actual implementation.
 
-Responsibilities of the Team Members
-It is acknowledged by all members of the team that:
+Testing: AI suggested possible test cases (registration, login, search, favourites, wishlist, comparison, theming, language switching, navigation, API responses). Actual testing and verification were performed by the team on the working application.
 
-We know the code and content we submit.
+4. Verification
 
-We can justify all our design and implementation decisions.
+AI output was never assumed accurate. Information was cross-checked against official Android, Kotlin, JetBrains and API documentation, plus our own compiler/runtime testing, in line with academic guidance on verifying AI-generated content (Stellenbosch University, 2026).
 
-We have verified the accuracy and appropriateness of any content that may be generated using AI assistance.
+5. Academic Integrity
 
-We take complete responsibility for our work.
+All key decisions — architecture, features, UI, database structure, API design, testing approach and final implementation — were made by the project team. AI tools are not authors of this project, as they cannot take responsibility for its academic or technical integrity (University of Johannesburg, 2023).
 
-Ethical Considerations
-We are aware of the ethical implications of the usage of AI in academic and professional contexts. We have used AI responsibly in a manner consistent with the policies of our academic institution for academic integrity.
+6. Responsibility Statement
+
+We confirm that AI was used solely as a supporting tool, that all AI-generated suggestions were reviewed and tested, and that we remain fully responsible for the accuracy, functionality and integrity of the submitted GameHub project.
+
+Student name(s): ___________________
+Student number(s): ___________________
+Signature(s): ___________________
+Date: ___________________
 
 ## References
 
