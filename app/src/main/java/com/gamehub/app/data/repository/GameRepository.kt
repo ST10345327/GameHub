@@ -9,7 +9,7 @@ import com.gamehub.app.data.model.SearchFilters
 import com.gamehub.app.data.model.SimilarGame
 import com.gamehub.app.data.remote.ApiCaller
 import com.gamehub.app.data.remote.ApiResult
-import com.gamehub.app.data.remote.GameHubApi
+import com.gamehub.app.data.remote.LootApi
 import com.gamehub.app.data.remote.dto.GameDetailsDto
 import com.gamehub.app.data.remote.dto.GameDto
 import com.gamehub.app.data.remote.dto.SearchResponseDto
@@ -24,7 +24,7 @@ interface GameRepository {
 }
 
 class GameRepositoryImpl(
-    private val api: GameHubApi,
+    private val api: LootApi,
     private val apiCaller: ApiCaller,
     private val currentYear: Int
 ) : GameRepository {

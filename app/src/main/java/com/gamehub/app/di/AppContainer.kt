@@ -10,7 +10,7 @@ import com.gamehub.app.data.local.gameHubDataStore
 import com.gamehub.app.data.remote.ApiCaller
 import com.gamehub.app.data.remote.ApiConfig
 import com.gamehub.app.data.remote.AuthInterceptor
-import com.gamehub.app.data.remote.GameHubApi
+import com.gamehub.app.data.remote.LootApi
 import com.gamehub.app.data.repository.AuthRepository
 import com.gamehub.app.data.repository.AuthRepositoryImpl
 import com.gamehub.app.data.repository.GameRepository
@@ -35,12 +35,12 @@ class AppContainer(context: Context) {
     private val apiCaller = ApiCaller(onSessionExpired = { sessionStore.clear() })
     private val okHttpClient: OkHttpClient = buildOkHttpClient()
 
-    private val api: GameHubApi = Retrofit.Builder()
+    private val api: LootApi = Retrofit.Builder()
         .baseUrl(ApiConfig.BASE_URL)
         .client(okHttpClient)
         .addConverterFactory(GsonConverterFactory.create())
         .build()
-        .create(GameHubApi::class.java)
+        .create(LootApi::class.java)
 
     val authRepository: AuthRepository = AuthRepositoryImpl(api, apiCaller, sessionStore)
 

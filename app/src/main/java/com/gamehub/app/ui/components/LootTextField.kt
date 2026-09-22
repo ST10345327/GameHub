@@ -33,7 +33,7 @@ import com.gamehub.app.R
  * Password fields get a show/hide toggle.
  */
 @Composable
-fun GameHubTextField(
+fun LootTextField(
     value: String,
     onValueChange: (String) -> Unit,
     label: String,

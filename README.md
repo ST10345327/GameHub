@@ -1,6 +1,6 @@
 # Loot-Gamehub
 
-![Android CI](https://github.com/ST10345327/GameHub/actions/workflows/build.yml/badge.svg)
+![Android CI](https://github.com/ST10345327/Loot-Gamehub/actions/workflows/build.yml/badge.svg)
 
 A game discovery and personal library app for Android, built with Kotlin and Jetpack Compose.
 Users can search games (IGDB), save them to a personal library, wishlist and favourites,

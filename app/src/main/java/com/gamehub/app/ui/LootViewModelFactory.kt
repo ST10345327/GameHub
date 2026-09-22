@@ -1,9 +1,9 @@
 package com.gamehub.app.ui
 
-import com.gamehub.app.ui.settings.SettingsViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
+import com.gamehub.app.ui.settings.SettingsViewModel
 import com.gamehub.app.di.AppContainer
 import com.gamehub.app.ui.auth.LoginViewModel
 import com.gamehub.app.ui.auth.RegisterViewModel
@@ -19,7 +19,7 @@ import com.gamehub.app.ui.surprise.SurpriseMeViewModel
  * Tells Android how to build each ViewModel that doesn't need a navigation argument.
  * GameDetailsViewModel is built separately (see its own factory) because it needs the game id.
  */
-fun gameHubViewModelFactory(container: AppContainer): ViewModelProvider.Factory = viewModelFactory {
+fun lootViewModelFactory(container: AppContainer): ViewModelProvider.Factory = viewModelFactory {
     initializer { SessionViewModel(container.authRepository) }
     initializer { SplashViewModel(container.authRepository) }
     initializer { LoginViewModel(container.authRepository) }

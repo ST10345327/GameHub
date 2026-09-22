@@ -5,7 +5,7 @@ import com.gamehub.app.data.model.LibraryStatus
 import com.gamehub.app.data.model.SavedGame
 import com.gamehub.app.data.remote.ApiCaller
 import com.gamehub.app.data.remote.ApiResult
-import com.gamehub.app.data.remote.GameHubApi
+import com.gamehub.app.data.remote.LootApi
 import com.gamehub.app.data.remote.dto.MoveToLibraryRequest
 import com.gamehub.app.data.remote.dto.SavedGameDto
 import com.gamehub.app.data.remote.dto.SavedGameListDto
@@ -28,7 +28,7 @@ interface LibraryRepository {
 }
 
 class LibraryRepositoryImpl(
-    private val api: GameHubApi,
+    private val api: LootApi,
     private val apiCaller: ApiCaller
 ) : LibraryRepository {
 

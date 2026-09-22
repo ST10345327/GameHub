@@ -22,7 +22,7 @@ import retrofit2.http.Path
 import retrofit2.http.Query
 
 /** The app's own REST API. See backend/README.md for the full endpoint list. */
-interface GameHubApi {
+interface LootApi {
 
     @POST("auth/register")
     suspend fun register(@Body body: RegisterRequest): AuthResponse

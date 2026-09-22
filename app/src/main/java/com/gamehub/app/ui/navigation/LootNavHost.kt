@@ -33,7 +33,7 @@ import com.gamehub.app.ui.auth.LoginScreen
 import com.gamehub.app.ui.auth.RegisterScreen
 import com.gamehub.app.ui.details.GameDetailsScreen
 import com.gamehub.app.ui.details.GameDetailsViewModel
-import com.gamehub.app.ui.gameHubViewModelFactory
+import com.gamehub.app.ui.lootViewModelFactory
 import com.gamehub.app.ui.home.HomeScreen
 import com.gamehub.app.ui.home.HomeViewModel
 import com.gamehub.app.ui.library.LibraryScreen
@@ -55,11 +55,11 @@ import com.gamehub.app.utils.AppLogger
 
 /** Root composable: owns the NavController, the bottom bar and every route. */
 @Composable
-fun GameHubNavHost(
+fun LootNavHost(
     container: AppContainer,
     navController: NavHostController = rememberNavController()
 ) {
-    val viewModelFactory = remember { gameHubViewModelFactory(container) }
+    val viewModelFactory = remember { lootViewModelFactory(container) }
     val sessionViewModel: SessionViewModel = viewModel(factory = viewModelFactory)
     val isLoggedIn by sessionViewModel.isLoggedIn.collectAsStateWithLifecycle()
     val currentUser by sessionViewModel.currentUser.collectAsStateWithLifecycle()
@@ -80,7 +80,7 @@ fun GameHubNavHost(
         containerColor = MaterialTheme.colorScheme.background,
         bottomBar = {
             if (showBottomBar) {
-                GameHubBottomBar(
+                LootBottomBar(
                     currentRoute = currentRoute,
                     onTabSelected = { route ->
                         AppLogger.debug("Tab selected: $route")
@@ -218,7 +218,7 @@ fun GameHubNavHost(
 }
 
 @Composable
-private fun GameHubBottomBar(currentRoute: String?, onTabSelected: (String) -> Unit) {
+private fun LootBottomBar(currentRoute: String?, onTabSelected: (String) -> Unit) {
     val colors = MaterialTheme.colorScheme
     NavigationBar(containerColor = colors.surface) {
         BottomTab.entries.forEach { tab ->

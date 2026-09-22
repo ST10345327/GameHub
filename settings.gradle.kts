@@ -22,6 +22,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "GameHub"
+rootProject.name = "Loot - Gamehub"
 include(":app")
  

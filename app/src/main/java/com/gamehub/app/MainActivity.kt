@@ -7,10 +7,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.gamehub.app.ui.gameHubViewModelFactory
-import com.gamehub.app.ui.navigation.GameHubNavHost
+import com.gamehub.app.ui.lootViewModelFactory
+import com.gamehub.app.ui.navigation.LootNavHost
 import com.gamehub.app.ui.settings.SettingsViewModel
-import com.gamehub.app.ui.theme.GameHubTheme
+import com.gamehub.app.ui.theme.LootTheme
 import com.gamehub.app.utils.AppLogger
 
 class MainActivity : ComponentActivity() {
@@ -19,16 +19,16 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         AppLogger.debug("MainActivity created")
 
-        val container = (application as GameHubApplication).container
-        val viewModelFactory = gameHubViewModelFactory(container)
+        val container = (application as LootApplication).container
+        val viewModelFactory = lootViewModelFactory(container)
 
         setContent {
             // Shared instance so the theme reacts the instant Settings changes it, from anywhere in the app.
             val settingsViewModel: SettingsViewModel = viewModel(factory = viewModelFactory)
             val settings by settingsViewModel.uiState.collectAsStateWithLifecycle()
 
-            GameHubTheme(themeMode = settings.themeMode) {
-                GameHubNavHost(container = container)
+            LootTheme(themeMode = settings.themeMode) {
+                LootNavHost(container = container)
             }
         }
     }

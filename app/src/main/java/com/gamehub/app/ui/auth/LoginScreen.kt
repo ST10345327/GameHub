@@ -38,7 +38,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.gamehub.app.R
 import com.gamehub.app.ui.common.messageRes
 import com.gamehub.app.ui.components.ErrorMessage
-import com.gamehub.app.ui.components.GameHubTextField
+import com.gamehub.app.ui.components.LootTextField
 import com.gamehub.app.ui.components.LoadingButton
 
 /**
@@ -87,7 +87,7 @@ fun LoginScreen(
         )
         Spacer(Modifier.height(32.dp))
 
-        GameHubTextField(
+        LootTextField(
             value = state.email,
             onValueChange = viewModel::onEmailChange,
             label = stringResource(R.string.auth_email),
@@ -96,7 +96,7 @@ fun LoginScreen(
             errorMessage = state.emailError?.let { stringResource(it.messageRes()) }
         )
         Spacer(Modifier.height(12.dp))
-        GameHubTextField(
+        LootTextField(
             value = state.password,
             onValueChange = viewModel::onPasswordChange,
             label = stringResource(R.string.auth_password),
@@ -165,7 +165,7 @@ private fun ForgotPasswordDialog(
                     Text(stringResource(R.string.forgot_done))
                 } else {
                     Text(stringResource(R.string.forgot_body))
-                    GameHubTextField(
+                    LootTextField(
                         value = state.email,
                         onValueChange = onEmailChange,
                         label = stringResource(R.string.auth_email),

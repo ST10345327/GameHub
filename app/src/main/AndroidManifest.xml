@@ -7,7 +7,7 @@
 
     <application
         android:localeConfig="@xml/locales_config"
-        android:name=".GameHubApplication"
+        android:name=".LootApplication"
         android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"

@@ -5,7 +5,7 @@ import com.gamehub.app.data.model.User
 import com.gamehub.app.data.remote.ApiCaller
 import com.gamehub.app.data.remote.ApiError
 import com.gamehub.app.data.remote.ApiResult
-import com.gamehub.app.data.remote.GameHubApi
+import com.gamehub.app.data.remote.LootApi
 import com.gamehub.app.data.remote.dto.AuthResponse
 import com.gamehub.app.data.remote.dto.ForgotPasswordRequest
 import com.gamehub.app.data.remote.dto.LoginRequest
@@ -34,7 +34,7 @@ interface AuthRepository {
 }
 
 class AuthRepositoryImpl(
-    private val api: GameHubApi,
+    private val api: LootApi,
     private val apiCaller: ApiCaller,
     private val sessionStore: SessionStore
 ) : AuthRepository {
