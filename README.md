@@ -1,4 +1,4 @@
-# Loot - Gamehub
+# Loot-Gamehub
 
 ![Android CI](https://github.com/ST10345327/GameHub/actions/workflows/build.yml/badge.svg)
 
