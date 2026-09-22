@@ -25,7 +25,7 @@ https://youtu.be/T6mjEAAWMFs
 
 ## Purpose of the app
 
-_The primary reason behind the existence of GameHub lies in addressing a certain challenge in the gaming industry: the increasing difficulty of discovering, researching and managing the video games that come out today in a more and more crowded environment.
+The primary reason behind the existence of GameHub lies in addressing a certain challenge in the gaming industry: the increasing difficulty of discovering, researching and managing the video games that come out today in a more and more crowded environment.
 
 Given the number of games that appear each year on multiple platforms (PC, PlayStation, Xbox, Nintendo, mobile), it's easy for gamers to become overwhelmed with all the possibilities of playing different games. GameHub was created to organize this chaos through one platform where users can discover new games, research them, bookmark them and track their progress in gaming.
 
